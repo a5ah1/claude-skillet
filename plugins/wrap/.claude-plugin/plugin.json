@@ -1,0 +1,5 @@
+{
+  "name": "wrap",
+  "description": "End-of-session close-out: sweep memory, project docs, working tree, lingering processes, and loose ends, then confirm it's safe to close the terminal.",
+  "author": { "name": "a5ah1", "url": "https://github.com/a5ah1" }
+}

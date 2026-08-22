@@ -2,11 +2,16 @@
 # One-way sync: ~/.claude/skills (source of truth, dev machine) → plugins/.
 # Never edit skill content inside this repo directly — improve the live skill,
 # then re-run this script. Ends with the privacy check.
+#
+# Usage: sync.sh [skill ...]   (no args = the full roster below)
 set -euo pipefail
 cd "$(git rev-parse --show-toplevel)"
 
 SKILLS_DIR="${SKILLS_DIR:-$HOME/.claude/skills}"
 SKILLS=(wp-ops lucide-icons wrap primer-colors)
+if (( $# )); then
+    SKILLS=("$@")
+fi
 
 for s in "${SKILLS[@]}"; do
     src="$SKILLS_DIR/$s"

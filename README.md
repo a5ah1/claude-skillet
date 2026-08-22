@@ -16,8 +16,11 @@ field, so every pushed commit propagates without version bumps.
 
 ## Skills
 
-_None published yet — first batch (wp-ops, lucide-icons, wrap, primer-colors)
-is being prepared._
+| Plugin | What it does |
+|--------|--------------|
+| `wrap` | End-of-session close-out — sweeps memory, project docs, working tree, lingering processes, and loose ends, then confirms it's safe to close the terminal. |
+
+_Coming: wp-ops, lucide-icons, primer-colors._
 
 ## Maintenance model
 

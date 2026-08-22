@@ -8,5 +8,11 @@
   "metadata": {
     "pluginRoot": "./plugins"
   },
-  "plugins": []
+  "plugins": [
+    {
+      "name": "wrap",
+      "source": "./plugins/wrap",
+      "description": "End-of-session close-out: sweep memory, project docs, working tree, lingering processes, and loose ends, then confirm it's safe to close the terminal."
+    }
+  ]
 }

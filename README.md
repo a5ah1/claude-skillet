@@ -19,6 +19,7 @@ field, so every pushed commit propagates without version bumps.
 | Plugin | What it does |
 |--------|--------------|
 | `glass-ui` | Glassmorphism / Liquid Glass-style translucent UI — calibrated opacity/blur/border values per theme and density, ambient-background requirements, performance budgets, reduced-transparency fallbacks. |
+| `lucide-icons` | Lucide icon selection that never hallucinates a name — searchable index of all icons with keywords, verify-before-use workflow, vanilla JS/React/Vue/Svelte usage. |
 | `wp-ops` | Safe WordPress operations via WP-CLI, local or over SSH — per-project install registry, pre-op DB snapshots, cache-layer purge ordering, dual-row ACF handling, sanitized prod-to-local cloning. |
 | `wrap` | End-of-session close-out — sweeps memory, project docs, working tree, lingering processes, and loose ends, then confirms it's safe to close the terminal. |
 

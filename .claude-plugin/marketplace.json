@@ -15,6 +15,11 @@
       "description": "Glassmorphism / Liquid Glass-style translucent UI done right: calibrated opacity, blur, and border values per theme and density, ambient-background requirements, performance budgets, and reduced-transparency accessibility fallbacks."
     },
     {
+      "name": "lucide-icons",
+      "source": "./plugins/lucide-icons",
+      "description": "Lucide icon selection that never hallucinates a name: a searchable index of all 1,776 icons with keywords, a verify-before-use workflow, and usage patterns for vanilla JS, React, Vue, and Svelte."
+    },
+    {
       "name": "wp-ops",
       "source": "./plugins/wp-ops",
       "description": "Safe WordPress operations via WP-CLI, local or over SSH: per-project install registry, pre-op DB snapshots, cache-layer purge ordering, dual-row ACF handling, and sanitized prod-to-local cloning."

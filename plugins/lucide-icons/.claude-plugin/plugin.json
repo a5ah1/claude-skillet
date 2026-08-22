@@ -1,0 +1,5 @@
+{
+  "name": "lucide-icons",
+  "description": "Lucide icon selection that never hallucinates a name: a searchable index of all 1,776 icons with keywords, a verify-before-use workflow, and usage patterns for vanilla JS, React, Vue, and Svelte.",
+  "author": { "name": "a5ah1", "url": "https://github.com/a5ah1" }
+}

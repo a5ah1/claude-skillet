@@ -1,0 +1,54 @@
+{
+  "_comment": "Per-project WordPress installation registry. Copy to <project-root>/.claude/wp-installations.json and fill in. Secrets are stored as env var names (e.g., CF_TOKEN), not values.",
+  "installations": {
+    "local": {
+      "path": "/var/www/site.test",
+      "url": "http://site.test",
+      "sudo_user": "www-data",
+      "notes": "Dev machine. No SSH. No cache layers."
+    },
+    "staging": {
+      "ssh": "site-host",
+      "path": "/var/www/preview.site.com",
+      "url": "https://preview.site.com",
+      "sudo_user": "www-data",
+      "cache": {
+        "fastcgi": false,
+        "cloudflare": false
+      },
+      "notes": "Let's Encrypt SSL, IP-restricted. No CDN, no FastCGI cache — always fresh."
+    },
+    "prod": {
+      "ssh": "site-host",
+      "path": "/var/www/site.com",
+      "url": "https://site.com",
+      "sudo_user": "www-data",
+      "php_fpm_service": "php8.3-fpm",
+      "cache": {
+        "opcache": {
+          "reload_cmd": "sudo systemctl reload php8.3-fpm"
+        },
+        "fastcgi": {
+          "zone": "SITE",
+          "cache_dir": "/var/cache/nginx/site.com",
+          "purge_url": "http://127.0.0.1/purge",
+          "status_header": "X-FastCGI-Cache"
+        },
+        "cloudflare": {
+          "zone_id_env": "CF_ZONE_ID",
+          "token_env": "CF_TOKEN",
+          "aop": true,
+          "notes": "AOP = Authenticated Origin Pull enforced. Cannot curl origin directly from laptop."
+        }
+      },
+      "db_snapshot_dir": "/var/backups/site/",
+      "notes": "Production. Destructive ops require user confirmation."
+    }
+  },
+  "conventions": {
+    "deploy_theme_cmd": "see ~/.claude/skills/wp-ops/scripts/safe-deploy.sh",
+    "clone_down_cmd": "see ~/.claude/skills/wp-ops/scripts/clone-down.sh",
+    "snapshot_cmd": "see ~/.claude/skills/wp-ops/scripts/pre-op-snapshot.sh",
+    "ops_log": ".claude/ops.log"
+  }
+}

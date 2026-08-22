@@ -10,6 +10,11 @@
   },
   "plugins": [
     {
+      "name": "wp-ops",
+      "source": "./plugins/wp-ops",
+      "description": "Safe WordPress operations via WP-CLI, local or over SSH: per-project install registry, pre-op DB snapshots, cache-layer purge ordering, dual-row ACF handling, and sanitized prod-to-local cloning."
+    },
+    {
       "name": "wrap",
       "source": "./plugins/wrap",
       "description": "End-of-session close-out: sweep memory, project docs, working tree, lingering processes, and loose ends, then confirm it's safe to close the terminal."

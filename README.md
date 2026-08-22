@@ -18,9 +18,10 @@ field, so every pushed commit propagates without version bumps.
 
 | Plugin | What it does |
 |--------|--------------|
+| `wp-ops` | Safe WordPress operations via WP-CLI, local or over SSH — per-project install registry, pre-op DB snapshots, cache-layer purge ordering, dual-row ACF handling, sanitized prod-to-local cloning. |
 | `wrap` | End-of-session close-out — sweeps memory, project docs, working tree, lingering processes, and loose ends, then confirms it's safe to close the terminal. |
 
-_Coming: wp-ops, lucide-icons, primer-colors._
+_Coming: lucide-icons, primer-colors._
 
 ## Maintenance model
 

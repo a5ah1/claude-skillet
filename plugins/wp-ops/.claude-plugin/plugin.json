@@ -1,0 +1,5 @@
+{
+  "name": "wp-ops",
+  "description": "Safe WordPress operations via WP-CLI, local or over SSH: per-project install registry, pre-op DB snapshots, cache-layer purge ordering, dual-row ACF handling, and sanitized prod-to-local cloning.",
+  "author": { "name": "a5ah1", "url": "https://github.com/a5ah1" }
+}

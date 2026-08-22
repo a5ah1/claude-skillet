@@ -1,0 +1,50 @@
+# WP-CLI config with multi-environment aliases.
+# Place at <project-root>/wp-cli.yml or ~/.wp-cli/config.yml
+#
+# With this file, you can write:
+#   wp @staging db export
+#   wp @prod option get siteurl
+#   wp @all plugin list  (fans out across aliases in a group)
+#
+# Instead of:
+#   ssh host 'sudo -u www-data wp --path=/var/www/site db export'
+
+@local:
+  path: /var/www/site.test
+  user: www-data
+
+@staging:
+  ssh: www-data@site-host:/var/www/preview.site.com
+  path: /var/www/preview.site.com
+
+@prod:
+  ssh: www-data@site-host:/var/www/site.com
+  path: /var/www/site.com
+
+# Group alias — fans out to both
+@remote:
+  - @staging
+  - @prod
+
+# Global defaults (apply to all invocations unless overridden)
+path: /var/www/site.test
+user: www-data
+
+# Per-command defaults
+search-replace:
+  skip-columns:
+    - guid
+  precise: true
+  all-tables-with-prefix: true
+
+db export:
+  add-drop-table: true
+
+# NOTE: the `ssh` field uses the SCP-style format `[user@]host[:path]`.
+# - If the user is omitted, SSH config defaults apply.
+# - If the path is included, wp-cli treats it as an implicit --path.
+# - Host can be an SSH config alias (with ControlMaster, etc.) — recommended.
+#
+# Gotcha: for non-interactive SSH, `wp` must be on $PATH for the remote user.
+# `~/.bashrc` is NOT sourced. Fix: symlink wp into /usr/local/bin or set
+# PermitUserEnvironment + ~/.ssh/environment.

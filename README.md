@@ -3,6 +3,8 @@
 A personal [Claude Code](https://code.claude.com) plugin marketplace. Each skill
 is packaged as its own plugin so it can be installed and toggled independently.
 
+Why *skillet*? It's the thing you keep your skills in. Also, it's for cooking.
+
 ## Install
 
 ```

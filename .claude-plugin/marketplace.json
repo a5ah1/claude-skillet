@@ -10,6 +10,11 @@
   },
   "plugins": [
     {
+      "name": "glass-ui",
+      "source": "./plugins/glass-ui",
+      "description": "Glassmorphism / Liquid Glass-style translucent UI done right: calibrated opacity, blur, and border values per theme and density, ambient-background requirements, performance budgets, and reduced-transparency accessibility fallbacks."
+    },
+    {
       "name": "wp-ops",
       "source": "./plugins/wp-ops",
       "description": "Safe WordPress operations via WP-CLI, local or over SSH: per-project install registry, pre-op DB snapshots, cache-layer purge ordering, dual-row ACF handling, and sanitized prod-to-local cloning."

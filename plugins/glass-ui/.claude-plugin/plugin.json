@@ -1,0 +1,5 @@
+{
+  "name": "glass-ui",
+  "description": "Glassmorphism / Liquid Glass-style translucent UI done right: calibrated opacity, blur, and border values per theme and density, ambient-background requirements, performance budgets, and reduced-transparency accessibility fallbacks.",
+  "author": { "name": "a5ah1", "url": "https://github.com/a5ah1" }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "claude-skillet",
+  "owner": {
+    "name": "a5ah1",
+    "url": "https://github.com/a5ah1"
+  },
+  "description": "Personal Claude Code skills, packaged one plugin per skill so each can be installed and toggled independently.",
+  "metadata": {
+    "pluginRoot": "./plugins"
+  },
+  "plugins": []
+}

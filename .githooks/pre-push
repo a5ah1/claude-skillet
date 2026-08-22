@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Blocks any push while tracked files contain private info.
+exec "$(git rev-parse --show-toplevel)/scripts/privacy-check.sh"

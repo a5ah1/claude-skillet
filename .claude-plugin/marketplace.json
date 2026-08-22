@@ -20,6 +20,11 @@
       "description": "Lucide icon selection that never hallucinates a name: a searchable index of all 1,776 icons with keywords, a verify-before-use workflow, and usage patterns for vanilla JS, React, Vue, and Svelte."
     },
     {
+      "name": "primer-colors",
+      "source": "./plugins/primer-colors",
+      "description": "GitHub Primer semantic color tokens as a ready-to-paste CSS file — complete dark, dark-dimmed, and light themes for admin panels, internal tools, and data-dense dashboards."
+    },
+    {
       "name": "wp-ops",
       "source": "./plugins/wp-ops",
       "description": "Safe WordPress operations via WP-CLI, local or over SSH: per-project install registry, pre-op DB snapshots, cache-layer purge ordering, dual-row ACF handling, and sanitized prod-to-local cloning."

@@ -1,0 +1,285 @@
+/*
+ * GitHub Primer Design System — Semantic Color Tokens
+ *
+ * Extracted from @primer/primitives. Three themes: dark-dimmed, dark, light.
+ * Apply via data-theme attribute on a container or <html> element.
+ *
+ * Source: https://github.com/primer/primitives
+ * License: MIT
+ */
+
+/* ==========================================================================
+   Dark Dimmed — softer dark theme, good default for long sessions
+   ========================================================================== */
+
+[data-theme="dark-dimmed"] {
+    color-scheme: dark;
+
+    /* Backgrounds */
+    --bgColor-default: #212830;
+    --bgColor-muted: #262c36;
+    --bgColor-inset: #151b23;
+    --bgColor-emphasis: #3d444d;
+    --bgColor-inverse: #cdd9e5;
+    --bgColor-disabled: #2a313c;
+    --bgColor-transparent: #00000000;
+
+    --bgColor-neutral-emphasis: #656c76;
+    --bgColor-neutral-muted: #656c7633;
+    --bgColor-accent-emphasis: #316dca;
+    --bgColor-accent-muted: #4184e41a;
+    --bgColor-success-emphasis: #347d39;
+    --bgColor-success-muted: #46954a26;
+    --bgColor-attention-emphasis: #966600;
+    --bgColor-attention-muted: #ae7c1426;
+    --bgColor-severe-emphasis: #ae5622;
+    --bgColor-severe-muted: #cc6b2c1a;
+    --bgColor-danger-emphasis: #c93c37;
+    --bgColor-danger-muted: #e5534b1a;
+
+    /* Foregrounds */
+    --fgColor-default: #f0f6fc;
+    --fgColor-muted: #9198a1;
+    --fgColor-onEmphasis: #f0f6fc;
+    --fgColor-onInverse: #010409;
+    --fgColor-disabled: #656c76;
+    --fgColor-link: #478be6;
+    --fgColor-neutral: #9198a1;
+    --fgColor-accent: #478be6;
+    --fgColor-success: #57ab5a;
+    --fgColor-attention: #c69026;
+    --fgColor-severe: #cc6b2c;
+    --fgColor-danger: #e5534b;
+
+    /* Borders */
+    --borderColor-default: #3d444d;
+    --borderColor-muted: #3d444db3;
+    --borderColor-emphasis: #656c76;
+    --borderColor-disabled: #656c761a;
+    --borderColor-translucent: #cdd9e526;
+    --borderColor-transparent: #00000000;
+
+    --borderColor-neutral-emphasis: #656c76;
+    --borderColor-neutral-muted: #3d444db3;
+    --borderColor-accent-emphasis: #316dca;
+    --borderColor-accent-muted: #4184e466;
+    --borderColor-success-emphasis: #347d39;
+    --borderColor-success-muted: #46954a66;
+    --borderColor-attention-emphasis: #966600;
+    --borderColor-attention-muted: #ae7c1466;
+    --borderColor-severe-emphasis: #ae5622;
+    --borderColor-severe-muted: #cc6b2c66;
+    --borderColor-danger-emphasis: #c93c37;
+    --borderColor-danger-muted: #e5534b66;
+
+    /* Shadows */
+    --shadow-resting-xsmall: 0px 1px 1px 0px #010409cc;
+    --shadow-resting-small: 0px 1px 1px 0px #01040999, 0px 1px 3px 0px #01040999;
+    --shadow-resting-medium: 0px 1px 1px 0px #01040966, 0px 3px 6px 0px #010409cc;
+    --shadow-floating-small: 0px 0px 0px 1px #3d444d, 0px 6px 12px -3px #01040966, 0px 6px 18px 0px #01040966;
+    --shadow-floating-medium: 0px 0px 0px 1px #3d444d, 0px 8px 16px -4px #01040966, 0px 4px 32px -4px #01040966, 0px 24px 48px -12px #01040966, 0px 48px 96px -24px #01040966;
+    --shadow-floating-large: 0px 0px 0px 1px #3d444d, 0px 24px 48px 0px #010409;
+    --shadow-floating-xlarge: 0px 0px 0px 1px #3d444d, 0px 32px 64px 0px #010409;
+    --shadow-inset: inset 0px 1px 0px 0px #0104093d;
+
+    /* Focus */
+    --focus-outline: 2px solid #316dca;
+
+    /* Overlay */
+    --overlay-backdrop-bgColor: #262c3666;
+    --overlay-bgColor: #2a313c;
+    --overlay-borderColor: #3d444db3;
+
+    /* Selection */
+    --selection-bgColor: #316dcab3;
+
+    /* Header */
+    --header-bgColor: #151b23f2;
+    --header-borderColor-divider: #656c76;
+    --header-fgColor-default: #cdd9e5b3;
+    --header-fgColor-logo: #f0f6fc;
+}
+
+/* ==========================================================================
+   Dark — high-contrast dark theme
+   ========================================================================== */
+
+[data-theme="dark"] {
+    color-scheme: dark;
+
+    /* Backgrounds */
+    --bgColor-default: #0d1117;
+    --bgColor-muted: #151b23;
+    --bgColor-inset: #010409;
+    --bgColor-emphasis: #3d444d;
+    --bgColor-inverse: #ffffff;
+    --bgColor-disabled: #212830;
+    --bgColor-transparent: #00000000;
+
+    --bgColor-neutral-emphasis: #656c76;
+    --bgColor-neutral-muted: #656c7633;
+    --bgColor-accent-emphasis: #1f6feb;
+    --bgColor-accent-muted: #388bfd1a;
+    --bgColor-success-emphasis: #238636;
+    --bgColor-success-muted: #2ea04326;
+    --bgColor-attention-emphasis: #9e6a03;
+    --bgColor-attention-muted: #bb800926;
+    --bgColor-severe-emphasis: #bd561d;
+    --bgColor-severe-muted: #db6d281a;
+    --bgColor-danger-emphasis: #da3633;
+    --bgColor-danger-muted: #f851491a;
+
+    /* Foregrounds */
+    --fgColor-default: #f0f6fc;
+    --fgColor-muted: #9198a1;
+    --fgColor-onEmphasis: #ffffff;
+    --fgColor-onInverse: #010409;
+    --fgColor-disabled: #656c76;
+    --fgColor-link: #4493f8;
+    --fgColor-neutral: #9198a1;
+    --fgColor-accent: #4493f8;
+    --fgColor-success: #3fb950;
+    --fgColor-attention: #d29922;
+    --fgColor-severe: #db6d28;
+    --fgColor-danger: #f85149;
+
+    /* Borders */
+    --borderColor-default: #3d444d;
+    --borderColor-muted: #3d444db3;
+    --borderColor-emphasis: #656c76;
+    --borderColor-disabled: #656c761a;
+    --borderColor-translucent: #ffffff26;
+    --borderColor-transparent: #00000000;
+
+    --borderColor-neutral-emphasis: #656c76;
+    --borderColor-neutral-muted: #3d444db3;
+    --borderColor-accent-emphasis: #1f6feb;
+    --borderColor-accent-muted: #388bfd66;
+    --borderColor-success-emphasis: #238636;
+    --borderColor-success-muted: #2ea04366;
+    --borderColor-attention-emphasis: #9e6a03;
+    --borderColor-attention-muted: #bb800966;
+    --borderColor-severe-emphasis: #bd561d;
+    --borderColor-severe-muted: #db6d2866;
+    --borderColor-danger-emphasis: #da3633;
+    --borderColor-danger-muted: #f8514966;
+
+    /* Shadows */
+    --shadow-resting-xsmall: 0px 1px 1px 0px #010409cc;
+    --shadow-resting-small: 0px 1px 1px 0px #01040999, 0px 1px 3px 0px #01040999;
+    --shadow-resting-medium: 0px 1px 1px 0px #01040966, 0px 3px 6px 0px #010409cc;
+    --shadow-floating-small: 0px 0px 0px 1px #3d444d, 0px 6px 12px -3px #01040966, 0px 6px 18px 0px #01040966;
+    --shadow-floating-medium: 0px 0px 0px 1px #3d444d, 0px 8px 16px -4px #01040966, 0px 4px 32px -4px #01040966, 0px 24px 48px -12px #01040966, 0px 48px 96px -24px #01040966;
+    --shadow-floating-large: 0px 0px 0px 1px #3d444d, 0px 24px 48px 0px #010409;
+    --shadow-floating-xlarge: 0px 0px 0px 1px #3d444d, 0px 32px 64px 0px #010409;
+    --shadow-inset: inset 0px 1px 0px 0px #0104093d;
+
+    /* Focus */
+    --focus-outline: 2px solid #1f6feb;
+
+    /* Overlay */
+    --overlay-backdrop-bgColor: #21283066;
+    --overlay-bgColor: #010409;
+    --overlay-borderColor: #3d444db3;
+
+    /* Selection */
+    --selection-bgColor: #1f6febb3;
+
+    /* Header */
+    --header-bgColor: #151b23f2;
+    --header-borderColor-divider: #656c76;
+    --header-fgColor-default: #ffffffb3;
+    --header-fgColor-logo: #f0f6fc;
+}
+
+/* ==========================================================================
+   Light
+   ========================================================================== */
+
+[data-theme="light"] {
+    color-scheme: light;
+
+    /* Backgrounds */
+    --bgColor-default: #ffffff;
+    --bgColor-muted: #f6f8fa;
+    --bgColor-inset: #f6f8fa;
+    --bgColor-emphasis: #25292e;
+    --bgColor-inverse: #25292e;
+    --bgColor-disabled: #eff2f5;
+    --bgColor-transparent: #ffffff00;
+
+    --bgColor-neutral-emphasis: #59636e;
+    --bgColor-neutral-muted: #818b981f;
+    --bgColor-accent-emphasis: #0969da;
+    --bgColor-accent-muted: #ddf4ff;
+    --bgColor-success-emphasis: #1f883d;
+    --bgColor-success-muted: #dafbe1;
+    --bgColor-attention-emphasis: #9a6700;
+    --bgColor-attention-muted: #fff8c5;
+    --bgColor-severe-emphasis: #bc4c00;
+    --bgColor-severe-muted: #fff1e5;
+    --bgColor-danger-emphasis: #cf222e;
+    --bgColor-danger-muted: #ffebe9;
+
+    /* Foregrounds */
+    --fgColor-default: #1f2328;
+    --fgColor-muted: #59636e;
+    --fgColor-onEmphasis: #ffffff;
+    --fgColor-onInverse: #ffffff;
+    --fgColor-disabled: #818b98;
+    --fgColor-link: #0969da;
+    --fgColor-neutral: #59636e;
+    --fgColor-accent: #0969da;
+    --fgColor-success: #1a7f37;
+    --fgColor-attention: #9a6700;
+    --fgColor-severe: #bc4c00;
+    --fgColor-danger: #d1242f;
+
+    /* Borders */
+    --borderColor-default: #d1d9e0;
+    --borderColor-muted: #d1d9e0b3;
+    --borderColor-emphasis: #818b98;
+    --borderColor-disabled: #818b981a;
+    --borderColor-translucent: #1f232826;
+    --borderColor-transparent: #ffffff00;
+
+    --borderColor-neutral-emphasis: #59636e;
+    --borderColor-neutral-muted: #d1d9e0b3;
+    --borderColor-accent-emphasis: #0969da;
+    --borderColor-accent-muted: #54aeff66;
+    --borderColor-success-emphasis: #1a7f37;
+    --borderColor-success-muted: #4ac26b66;
+    --borderColor-attention-emphasis: #9a6700;
+    --borderColor-attention-muted: #d4a72c66;
+    --borderColor-severe-emphasis: #bc4c00;
+    --borderColor-severe-muted: #fb8f4466;
+    --borderColor-danger-emphasis: #cf222e;
+    --borderColor-danger-muted: #ff818266;
+
+    /* Shadows */
+    --shadow-resting-xsmall: 0px 1px 1px 0px #1f23280f;
+    --shadow-resting-small: 0px 1px 1px 0px #1f23280f, 0px 1px 3px 0px #1f23280f;
+    --shadow-resting-medium: 0px 1px 1px 0px #25292e1a, 0px 3px 6px 0px #25292e1f;
+    --shadow-floating-small: 0px 0px 0px 1px #d1d9e080, 0px 6px 12px -3px #25292e0a, 0px 6px 18px 0px #25292e1f;
+    --shadow-floating-medium: 0px 0px 0px 1px #d1d9e0, 0px 8px 16px -4px #25292e14, 0px 4px 32px -4px #25292e14, 0px 24px 48px -12px #25292e14, 0px 48px 96px -24px #25292e14;
+    --shadow-floating-large: 0px 0px 0px 1px #d1d9e0, 0px 40px 80px 0px #25292e3d;
+    --shadow-floating-xlarge: 0px 0px 0px 1px #d1d9e0, 0px 56px 112px 0px #25292e52;
+    --shadow-inset: inset 0px 1px 0px 0px #1f23280a;
+
+    /* Focus */
+    --focus-outline: 2px solid #0969da;
+
+    /* Overlay */
+    --overlay-backdrop-bgColor: #c8d1da66;
+    --overlay-bgColor: #ffffff;
+    --overlay-borderColor: #d1d9e080;
+
+    /* Selection */
+    --selection-bgColor: #0969da33;
+
+    /* Header */
+    --header-bgColor: #25292e;
+    --header-borderColor-divider: #818b98;
+    --header-fgColor-default: #ffffffb3;
+    --header-fgColor-logo: #ffffff;
+}

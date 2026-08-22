@@ -23,9 +23,9 @@ else
     echo "WARNING: .private-patterns missing — personal pattern scan skipped." >&2
 fi
 
-# 2. Email addresses (GitHub noreply and example domains are allowed)
+# 2. Email addresses (GitHub noreply, example domains, and reserved TLDs allowed)
 out=$(git grep -inE '[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}' \
-    | grep -viE 'users\.noreply\.github\.com|example\.(com|org|net)' || true)
+    | grep -viE 'users\.noreply\.github\.com|example\.(com|org|net)|@[a-z0-9.-]+\.(invalid|test|example|localhost)\b' || true)
 [[ -n "$out" ]] && report "email address" "$out"
 
 # 3. IPv4 addresses (loopback and documentation ranges are allowed)

@@ -8,7 +8,7 @@ set -euo pipefail
 cd "$(git rev-parse --show-toplevel)"
 
 SKILLS_DIR="${SKILLS_DIR:-$HOME/.claude/skills}"
-SKILLS=(wp-ops lucide-icons wrap primer-colors glass-ui)
+SKILLS=(wp-ops lucide-icons wrap tidy primer-colors glass-ui)
 if (( $# )); then
     SKILLS=("$@")
 fi

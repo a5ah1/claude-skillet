@@ -25,6 +25,11 @@
       "description": "GitHub Primer semantic color tokens as a ready-to-paste CSS file — complete dark, dark-dimmed, and light themes for admin panels, internal tools, and data-dense dashboards."
     },
     {
+      "name": "tidy",
+      "source": "./plugins/tidy",
+      "description": "Pre-clear housekeeping: before /clear and a switch to unrelated work, update memory and project docs, commit or report the working tree, and finish or surface anything in flight, then confirm it's safe to clear."
+    },
+    {
       "name": "wp-ops",
       "source": "./plugins/wp-ops",
       "description": "Safe WordPress operations via WP-CLI, local or over SSH: per-project install registry, pre-op DB snapshots, cache-layer purge ordering, dual-row ACF handling, and sanitized prod-to-local cloning."

@@ -1,0 +1,5 @@
+{
+  "name": "tidy",
+  "description": "Pre-clear housekeeping: before /clear and a switch to unrelated work, update memory and project docs, commit or report the working tree, and finish or surface anything in flight, then confirm it's safe to clear.",
+  "author": { "name": "a5ah1", "url": "https://github.com/a5ah1" }
+}

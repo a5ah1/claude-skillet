@@ -29,16 +29,24 @@ field, so every pushed commit propagates without version bumps.
 
 ## Maintenance model
 
-This repo is a **publish mirror**, not a working copy:
+This repo is the **source of truth**. On the dev machine the skills run
+straight from it:
 
-- The source of truth is `~/.claude/skills/` on the dev machine, where the
-  skills run live as personal skills.
-- `scripts/sync.sh` copies them one-way into `plugins/`, then runs the
-  privacy check. Never edit skill content here directly.
-- Never edit installed plugin copies on consuming machines either — they are
-  overwritten on every marketplace update.
+- `scripts/link.sh` symlinks each `plugins/<name>/skills/<name>` into
+  `~/.claude/skills/`, so edits here are live immediately and pushing is what
+  publishes. Re-run it after adding a plugin; it never overwrites a real
+  directory.
+- `scripts/link.sh adopt <name>` brings a local-only skill into the repo:
+  moves it into `plugins/`, scaffolds its manifest, links it back, and runs
+  the privacy check.
+- Everything here is public once pushed, so skills hold no machine-local
+  private details — those belong in per-project files.
+- The dev machine doesn't install this marketplace, to avoid loading every
+  skill twice. Other machines do, and never edit their installed copies —
+  they are overwritten on every marketplace update.
 - `scripts/privacy-check.sh` must pass before any push (wired up as a
   pre-push hook via `git config core.hooksPath .githooks`). It scans tracked
   files for private hostnames, identities, emails, IPs, and secrets;
   personal patterns live in the gitignored `.private-patterns`.
-- `archive/` (gitignored, dev machine only) parks retired skills.
+- `archive/` (gitignored, dev machine only) parks retired skills and
+  backups.

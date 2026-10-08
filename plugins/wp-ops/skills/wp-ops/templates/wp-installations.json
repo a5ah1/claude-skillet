@@ -46,9 +46,9 @@
     }
   },
   "conventions": {
-    "deploy_theme_cmd": "see ~/.claude/skills/wp-ops/scripts/safe-deploy.sh",
-    "clone_down_cmd": "see ~/.claude/skills/wp-ops/scripts/clone-down.sh",
-    "snapshot_cmd": "see ~/.claude/skills/wp-ops/scripts/pre-op-snapshot.sh",
+    "deploy_theme_cmd": "see scripts/safe-deploy.sh in the wp-ops skill directory",
+    "clone_down_cmd": "see scripts/clone-down.sh in the wp-ops skill directory",
+    "snapshot_cmd": "see scripts/pre-op-snapshot.sh in the wp-ops skill directory",
     "ops_log": ".claude/ops.log"
   }
 }
